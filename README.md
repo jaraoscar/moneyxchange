@@ -1,5 +1,5 @@
 # Moneyxchange
-- Sample application for converting currencies.
+- Sample application for converting currencies using JWT (JSON Web Token) authentication.
 
 ## Getting started
 ### Prerequisites
