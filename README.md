@@ -27,7 +27,7 @@ Run the following and double-check the port where the server starts:
     $ cd moneyxchange/server/moneyxchange-api
     $ mvn spring-boot:run
 
-Once done, the following URL should be used for authentication: `http://localhost:8080/token/auth` (POST) and the user credentials should be passed in JSON format:
+Once done, the following URL should be used for authentication `http://localhost:8080/token/auth` *(POST)* and the user credentials should be passed in *JSON* format:
 
 ```
 {
@@ -36,7 +36,7 @@ Once done, the following URL should be used for authentication: `http://localhos
 }
 ```
 
-The authentication service will return a token that will expire in 1 hour:
+The authentication service will return a token that will expire after 1 hour:
 
 ```
 {
@@ -44,7 +44,7 @@ The authentication service will return a token that will expire in 1 hour:
 }
 ```
 
-NOTE: To create another user, the following URL should be used for that purpose: `http://localhost:8080/signup` (POST) and the user data should be passed in JSON format:
+The following URL should be used for creating another user `http://localhost:8080/signup` *(POST)* and the user data should be passed in *JSON* format:
 
 ```
 {
