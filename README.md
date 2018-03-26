@@ -11,8 +11,8 @@
 
 ## Run the app
 ### Database
-- Run the following script on MySQL, it can be found at: `moneyxchange/server/moneyxchange-api/src/main/resources/script.sql`
-- MySQL connection properties can be modified at: `moneyxchange/server/moneyxchange-api/src/main/resources/application.properties`
+- Run the following script on MySQL, it can be found @ `moneyxchange/server/moneyxchange-api/src/main/resources/script.sql`
+- MySQL connection properties can be modified @ `moneyxchange/server/moneyxchange-api/src/main/resources/application.properties`
 - A `user` table will be created after the script execution.
 - The following user will be created:
 
@@ -27,7 +27,7 @@ Run the following and double-check the port where the server starts:
     $ cd moneyxchange/server/moneyxchange-api
     $ mvn spring-boot:run
 
-Once done, the following URL should be used for authentication `http://localhost:8080/token/auth` *(POST)* and the user credentials should be passed in *JSON* format:
+Once done, the following *URL* should be used for authentication `http://localhost:8080/token/auth` *(POST)* and the user credentials should be passed in *JSON* format:
 
 ```
 {
@@ -44,7 +44,7 @@ The authentication service will return a token that will expire after 1 hour:
 }
 ```
 
-The following URL should be used for creating another user `http://localhost:8080/signup` *(POST)* and the user data should be passed in *JSON* format:
+The following *URL* should be used for creating another user `http://localhost:8080/signup` *(POST)* and the user data should be passed in *JSON* format:
 
 ```
 {
@@ -54,6 +54,13 @@ The following URL should be used for creating another user `http://localhost:808
     "lastname": "Bar"
 }
 ```
+
+To list all the users go to `http://localhost:8080/users` *(GET)* but remember to include the `Authorization` *HTTP* header with the following value (which is containing the token): 
+
+```
+Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbjUiLCJzY29wZXMiOlt7ImF1dGhvcml0eSI6IlJPT
+``` 
+Otherwise your *HTTP* request will be [Unauthorized](https://httpstatuses.com/401).
 
 ## Client (SPA)
 TBD
