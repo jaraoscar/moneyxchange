@@ -3,13 +3,13 @@
 
 ## Getting started
 ### Prerequisites
+The versions are just a reference, these were used when working on the project.
+
 - [Node.js](https://nodejs.org/) (8.10.0)
 - [Angular CLI](https://cli.angular.io/) (1.7.3)
 - [Apache Maven](https://maven.apache.org/download.cgi) (3.2.5)
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (1.8.0_161)
 - [MySQL](https://dev.mysql.com/downloads/) (5.6.22)
-
-(The versions are just a reference, these were used when working on the project)
 
 ## Running the app
 ### Database
