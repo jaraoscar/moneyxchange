@@ -31,8 +31,8 @@ Once done, the following URL should be used for authentication `http://localhost
 
 ```
 {
-	"username": "oscar.jara",
-	"password": "admin"
+    "username": "oscar.jara",
+    "password": "admin"
 }
 ```
 
@@ -48,10 +48,10 @@ The following URL should be used for creating another user `http://localhost:808
 
 ```
 {
-	"username": "admin",
-	"password": "admin",
-	"name": "Foo",
-	"lastname": "Bar"
+    "username": "admin",
+    "password": "admin",
+    "name": "Foo",
+    "lastname": "Bar"
 }
 ```
 
