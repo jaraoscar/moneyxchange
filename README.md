@@ -9,9 +9,9 @@
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (1.8.0_161)
 - [MySQL](https://dev.mysql.com/downloads/) (5.6.22)
 
-*(The versions are just a reference, these were used when working on the project)*
+(The versions are just a reference, these were used when working on the project)
 
-## Run the app
+## Running the app
 ### Database
 - Run the following script on MySQL, it can be found @ `moneyxchange/server/moneyxchange-api/src/main/resources/script.sql`
 - MySQL connection properties can be modified @ `moneyxchange/server/moneyxchange-api/src/main/resources/application.properties`
